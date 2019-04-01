@@ -1,0 +1,27 @@
+@media (min-width: 320px) {
+  .video {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      background-image: url("img/play.png");
+      left: 120px;
+      top: 145px;
+    }
+  }
+
+  .video__title {
+    @include mobile-title;
+    margin-top: 60px;
+    padding: 0 20px;
+    margin-bottom: 27px;
+  }
+
+  .video__img {
+    width: 320px;
+    height: 193px;
+  }
+}

@@ -1,0 +1,49 @@
+.consultation__title {
+  @include reset-margin-padding;
+  font-weight: 700;
+}
+
+.consultation__list {
+  @include reset-list;
+  padding-left: 24px;
+  margin-bottom: 26px;
+}
+
+.consultation__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    left: -24px;
+    top: 6px;
+    background-image: url("img/list-marker.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 320px) {
+  .consultation {
+    @include mobile-side-paddings;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510px' height='510px'%3E%3Cpath fill-rule='evenodd' fill='rgb(239, 253, 255)' d='M255.000,509.999 C114.167,509.999 -0.000,395.832 -0.000,254.999 C-0.000,114.167 114.167,-0.001 255.000,-0.001 C395.833,-0.001 510.000,114.167 510.000,254.999 C510.000,395.832 395.833,509.999 255.000,509.999 ZM253.146,75.388 C154.973,75.388 75.389,154.973 75.389,253.145 C75.389,351.317 154.973,430.901 253.146,430.901 C351.318,430.901 430.902,351.317 430.902,253.145 C430.902,154.973 351.318,75.388 253.146,75.388 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: -225px 0;
+  }
+
+  .consultation__title {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .consultation__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+}

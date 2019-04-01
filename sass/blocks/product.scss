@@ -1,0 +1,50 @@
+.product {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  box-shadow: 4.95px 4.95px 20px 0px rgba(0, 0, 0, 0.13);
+}
+
+.product:not(:first-child) {
+  margin-top: 20px;
+}
+
+.product__img {
+  display: block;
+  margin: 0 auto;
+
+  &--dysport {
+    margin-top: 18px;
+    margin-bottom: 17px;
+  }
+}
+
+.product__info {
+  padding-top: 21px;
+  padding-left: 12px;
+}
+
+.product__title {
+  font-size: 24px;
+  @include reset-margin-padding;
+  margin-bottom: 10px;
+}
+
+.product__manufacturer {
+  @include reset-margin-padding;
+  margin-bottom: 10px;
+}
+
+.product__price {
+  @include reset-margin-padding;
+  margin-bottom: 38px;
+}
+
+@media (min-width: 320px) {
+  .product_calculate {
+    width: 276px;
+    padding: 10px 45px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}

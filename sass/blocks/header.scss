@@ -1,0 +1,46 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 280px;
+  height: 68px;
+}
+
+.header__burger {
+  width: 22px;
+  height: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22px' height='17px'%3E%3Cpath fill-rule='evenodd' fill='rgb(60, 180, 194)' d='M-0.000,16.999 L-0.000,13.999 L22.000,13.999 L22.000,16.999 L-0.000,16.999 Z'/%3E%3Cpath fill-rule='evenodd' fill='rgb(60, 180, 194)' d='M-0.000,9.999 L-0.000,6.999 L22.000,6.999 L22.000,9.999 L-0.000,9.999 Z'/%3E%3Cpath fill-rule='evenodd' fill='rgb(60, 180, 194)' d='M-0.000,2.999 L-0.000,-0.001 L22.000,-0.001 L22.000,2.999 L-0.000,2.999 Z'/%3E%3C/svg%3E");
+  @include reset-button;
+  align-self: center;
+}
+
+@media (min-width: 320px) {
+  .header {
+    @include mobile-side-paddings;
+    padding-top: 12px;
+  }
+
+  .header__social, .header__address, .header__call {
+    display: none;
+  }
+
+
+  .header__logo {
+    width: 164px;
+    height: 41px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+

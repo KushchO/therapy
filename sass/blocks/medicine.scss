@@ -1,0 +1,38 @@
+.medicine {
+  @include mobile-side-paddings;
+  display: flex;
+  flex-direction: column;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='544px' height='1036px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.6' fill='rgb(227, 252, 255)' d='M544.000,82.999 C544.000,82.999 492.119,17.471 395.911,7.998 C326.772,1.191 221.406,88.196 158.289,81.998 C61.820,72.526 -0.000,-0.002 -0.000,-0.002 L-0.000,1035.999 L544.000,1035.999 L544.000,82.999 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M544.000,82.999 C544.000,82.999 492.119,17.471 395.911,7.998 C326.772,1.191 221.406,88.196 158.289,81.998 C61.820,72.526 -0.000,-0.002 -0.000,-0.002 L-0.000,1035.999 L544.000,1035.999 L544.000,82.999 Z'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='544px' height='1016px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.302' fill='rgb(205, 249, 255)' d='M-0.000,32.998 C-0.000,32.998 70.791,-0.001 165.466,-0.001 C234.653,-0.001 325.573,45.998 388.733,45.998 C486.734,45.998 544.000,17.999 544.000,17.999 L544.000,1015.999 L-0.000,1015.999 L-0.000,32.998 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M-0.000,32.998 C-0.000,32.998 70.791,-0.001 165.466,-0.001 C234.653,-0.001 325.573,45.998 388.733,45.998 C486.734,45.998 544.000,17.999 544.000,17.999 L544.000,1015.999 L-0.000,1015.999 L-0.000,32.998 Z'/%3E%3C/svg%3E");
+  background-position: 0 0, 0 10px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.medicine__list {
+  @include reset-list;
+  margin-bottom: 14px;
+}
+
+.medicine__note {
+  @include reset-margin-padding;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+}
+
+@media (min-width: 320px) {
+  .medicine {
+    padding-bottom: 50px;
+  }
+
+  .medicine__title {
+    margin: 0 auto;
+    margin-top: 93px;
+    margin-bottom: 47px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+

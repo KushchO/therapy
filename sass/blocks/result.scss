@@ -1,0 +1,138 @@
+.result__container {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $main;
+
+  &::before {
+    content: "ДО";
+    position: absolute;
+    bottom: 12px;
+    left: 17px;
+    color: #f0f0f0;
+    z-index: 1000;
+  }
+
+  &::after {
+    content: "ПОСЛЕ";
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+    color: #f0f0f0;
+    z-index: 1000;
+  }
+}
+
+.result__list {
+  @include reset-list;
+}
+
+.result__container img {
+  width: 100%;
+  display:block;
+  max-width:none;
+}
+
+.result__container .resize {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+
+.result__container .handle {
+position:absolute;
+left:50%;
+top:0;
+bottom:0;
+width:1px;
+margin-left:-2px;
+
+background: $main;
+cursor: ew-resize;
+}
+
+.result__marker {
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width:5px;
+  height: 50px;
+  background: $main;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 16px;
+    left: -10px;
+    top: 15px;
+    background-image: url("img/marker-left.png");
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 7px;
+    height: 16px;
+    left: 10px;
+    top: 15px;
+    background-image: url("img/marker-right.png");
+  }
+}
+
+.result__container .handle:after {
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+
+  content:'';
+  color:white;
+  font-weight:bold;
+  font-size:36px;
+  text-align:center;
+  line-height:64px;
+  transition:all 0.3s ease;
+}
+
+.ba-slider .handle.ba-draggable:after {
+  width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px;
+  line-height:50px;
+  font-size:30px;
+}
+
+@media (min-width: 320px) {
+  .result {
+    @include mobile-side-paddings;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  .result__title {
+    @include reset-margin-padding;
+    @include mobile-title;
+    padding: 0 10px;
+    margin-top: 63px;
+    margin-bottom: 25px;
+  }
+
+  .result__text {
+    @include reset-margin-padding;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .result__img {
+    height: 310px;
+  }
+}

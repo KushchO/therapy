@@ -1,0 +1,77 @@
+.indications {
+  background-color: rgb(226, 252, 255);
+}
+
+.indications__list {
+  @include reset-list;
+}
+
+@media (min-width: 320px) {
+  .indications {
+    @include mobile-side-paddings;
+    padding-top: 50px;
+    padding-bottom: 35px
+  }
+
+  .indications__title {
+    @include reset-margin-padding;
+    @include mobile-title;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .indications__item {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    display: flex;
+    flex-wrap: wrap;
+
+    &--open {
+      .indications__heading {
+        color: #000000;
+
+        &::after {
+          background-image: url("img/down-arrow.png");
+        }
+      }
+    }
+  }
+
+
+  .indications__heading {
+    @include reset-margin-padding;
+    box-sizing: border-box;
+    font-size: $mobile-main-font;
+    line-height: 18px;
+    font-weight: 400;
+    color: $main;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 13px;
+      padding-right: 5px;
+      margin-left: 15px;
+      background-image: url("img/back-arrow.png");
+      background-repeat: no-repeat;
+      align-self: center;
+    }
+  }
+
+  .indications__text--open {
+    @include reset-margin-padding;
+    margin-top: 5px;
+    padding-left: 18px;
+    line-height: 20px;
+  }
+
+}

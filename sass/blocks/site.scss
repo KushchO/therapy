@@ -1,0 +1,42 @@
+.site {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.site__header {
+  width: 100%;
+}
+
+.entry-title {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .site {
+    width: 320px;
+    padding-bottom: 5px;
+    background-image: url("img/header_back.png"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='322px' height='479px'%3E%3Cpath fill-rule='evenodd' fill='rgb(233, 252, 254)' d='M322.000,457.688 C322.000,457.688 280.098,479.001 224.058,479.001 C183.106,479.001 129.289,449.292 91.904,449.292 C33.896,449.292 -0.000,467.374 -0.000,467.374 L-0.000,0.375 L322.000,0.375 L322.000,457.688 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 0, 20px;
+  }
+
+  .site__header {
+    padding-bottom: 4px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .site {
+    width: 768px;
+    }
+}
+
+@media (min-width: 1440px) {
+  .site {
+    width: 1440px;
+    }
+}

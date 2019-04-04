@@ -1,0 +1,20 @@
+@media (min-width: 320px){
+  .footer {
+    @include mobile-side-paddings;
+    background-color: $footer;
+    color: $footer-color;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__policy {
+    @include footer-dim;
+  }
+
+  .footer__copyright {
+    @include footer-dim;
+    padding: 0 40px;
+  }
+}

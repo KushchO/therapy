@@ -1,0 +1,60 @@
+@media (min-width: 320px) {
+  .medics {
+    padding-bottom: 50px;
+    margin-bottom: 33px;
+  }
+
+  .medics__tittle {
+    @include mobile-title;
+    @include reset-margin-padding;
+    margin-bottom: 24px;
+  }
+
+  .medics__about {
+    @include reset-margin-padding;
+    @include mobile-side-paddings;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .medics__item-wrapper {
+    @include product;
+    box-sizing: border-box;
+    margin: 20px auto 20px;
+    max-width: 300px;
+    padding-top: 22px;
+    padding-bottom: 5px;
+   }
+
+  .medics__img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .medics__name {
+    @include mobile-title;
+    @include reset-margin-padding;
+    margin-top: 13px;
+  }
+
+  .medics__speciality {
+    @include reset-margin-padding;
+    margin-bottom: 5px;
+  }
+
+  .medics__experience {
+    @include reset-margin-padding;
+    margin-bottom: 22px;
+  }
+
+  .medics__button {
+    max-width: 270px;
+    padding: 18px 25px;
+  }
+
+  .medics__controls {
+    @include mobile-side-paddings;
+    margin-top: -24px;
+  }
+}

@@ -1,0 +1,21 @@
+@media (min-width: 320px){
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .address__title {
+    @include footer-title;
+    margin-bottom: 5px;
+  }
+
+  .address__info {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .address__street {
+    margin-bottom: 14px;
+  }
+}

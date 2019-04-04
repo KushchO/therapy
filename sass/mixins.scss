@@ -23,3 +23,34 @@
   line-height: 24px;
   text-align: center;
 }
+
+@mixin product {
+  background-color: #ffffff;
+  box-shadow: 4.95px 4.95px 20px 0px rgba(0, 0, 0, 0.13);
+}
+
+@mixin footer-title {
+  @include reset-margin-padding;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin circle($width) {
+  display: block;
+  width: $width;
+  height: $width;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+@mixin before-icon-in-circle($width) {
+  content: "";
+  position: absolute;
+  @include circle($width);
+  background-repeat: no-repeat;
+}
+
+@mixin footer-dim {
+  color: #2e9ca9;
+  text-align: center;
+}

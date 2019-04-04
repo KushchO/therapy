@@ -42,23 +42,23 @@ body {
   position: relative;
 }
 
-#prev-btn, #next-btn {
+.slider__prev-btn, .slider__next-btn {
   position: absolute;
   width: 37px;
   height: 17px;
   bottom: -40px;
 }
 
-#prev-btn:hover, #next-btn:hover {
+.slider__prev-btn:hover, .slider__next-btn:hover {
   cursor: pointer;
 }
 
-#prev-btn {
+.slider__prev-btn {
   left: 0;
   background-image: url("img/long-arrow-left.png");
 }
 
-#next-btn {
+.slider__next-btn {
   background-image: url("img/long-arrow-right.png");
   right: 0;
 }

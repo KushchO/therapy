@@ -147,23 +147,24 @@ get_header();
           Записывайтесь к нам на консультацию и мы поможем Вам!
         </p>
         <form id="appointment-form" action="" class="appointment__form">
-          <div class="appointment__input-wrapper">
+          <div class="appointment__input-wrapper input__wrapper">
             <input type="text" class="appointment__input" placeholder="Имя">
           </div>
-          <div class="appointment__input-wrapper">
+          <div class="appointment__input-wrapper input__wrapper">
             <input type="text" class="appointment__input" placeholder="Телефон">
           </div>
           <input id="appointment-agree1" type="checkbox" class="appointment__input consultation__input--agree visually-hidden" checked>
-          <label class="appointment__label" for="appointment-agree1">
+          <label class="appointment__label checkbox-label" for="appointment-agree1">
           <span>Согласие с условиями <a href="#" class="appointment__link">Политики&nbsp;конфиденциальности</a></span>
           </label>
+          </form>
           <button class="appointment__button button" form="appointment-form">Записаться</button>
       </section>
       <section class="result">
         <h2 class="result__title">Естественный <span class="turquoise">результат и сохранение</span> индивидуальности</h2>
         <p class="result__text">Посмотрите возможности применения ботулинотерапии</p>
         <div class="slider__viewport result__slider">
-          <ul class="slider__wrapper">
+          <ul id="slider1" class="slider__wrapper">
             <li class="slider__item result__item">
               <div id="result__container1" class="result__container">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
@@ -199,15 +200,17 @@ get_header();
             </li>
           </ul>
         </div>
-        <div class="slider__buttons">
-            <div id="prev-btn"></div>
-            <div id="next-btn"></div>
+        <div id="controls1" class="slider__controls">
+          <div class="slider__buttons">
+              <div class="slider__prev-btn"></div>
+              <div class="slider__next-btn"></div>
+          </div>
+          <ul class="slider__nav-btns">
+            <li class="slider__nav-btn"></li>
+            <li class="slider__nav-btn"></li>
+            <li class="slider__nav-btn"></li>
+          </ul>
         </div>
-        <ul class="slider__nav-btns">
-          <li class="slider__nav-btn"></li>
-          <li class="slider__nav-btn"></li>
-          <li class="slider__nav-btn"></li>
-        </ul>
       </section>
       <section class="sharova">
         <h2 class="sharova__title">
@@ -246,6 +249,174 @@ get_header();
         </h2>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/img/video.png" alt="" class="video__img" width="300" height="200">
       </section>
+      <section class="medics">
+        <h2 class="medics__tittle">Наши <span class="turquoise">врачи</span></h2>
+        <p class="medics__about">Средний опыт наших специалистов 10 лет</p>
+        <div class="medics__slider slider__viewport result__slider">
+          <ul id="slider2" class="medics__list slider__wrapper">
+            <li class="medics__item slider__item">
+              <div class="medics__item-wrapper">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/sharova-alisa.png" alt="" class="medics__img" width="250" height="200">
+                <h3 class="medics__name">Шарова А.А.</h3>
+                <p class="medics__speciality">Врач косметолог</p>
+                <p class="medics__experience">Стаж 12 лет</p>
+                <button class="medics__button button">Записаться на прием</button>
+              </div>
+            </li>
+            <li class="medics__item slider__item">
+              <div class="medics__item-wrapper">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/sharova-alisa.png" alt="" class="medics__img" width="250" height="200">
+                <h3 class="medics__name">Шарова А.А.</h3>
+                <p class="medics__speciality">Врач косметолог</p>
+                <p class="medics__experience">Стаж 12 лет</p>
+                <button class="medics__button button">Записаться на прием</button>
+              </div>
+            </li>
+            <li class="medics__item slider__item">
+              <div class="medics__item-wrapper">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/sharova-alisa.png" alt="" class="medics__img" width="250" height="200">
+                <h3 class="medics__name">Шарова А.А.</h3>
+                <p class="medics__speciality">Врач косметолог</p>
+                <p class="medics__experience">Стаж 12 лет</p>
+                <button class="medics__button button">Записаться на прием</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="controls2" class="slider__controls medics__controls">
+          <div class="slider__buttons">
+              <div class="slider__prev-btn"></div>
+              <div class="slider__next-btn"></div>
+          </div>
+          <ul class="slider__nav-btns">
+            <li class="slider__nav-btn"></li>
+            <li class="slider__nav-btn"></li>
+            <li class="slider__nav-btn"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="comments">
+        <h2 class="comments__tittle">
+          «ЦЭМ Чистые пруды <span class="turquoise">вернули мне молодость</span>» – Ольга, 37 лет
+        </h2>
+        <p class="comments__about">Посмотрите отзывы счастливых клиентов</p>
+        <div class="comments__slider slider__viewport result__slider">
+          <ul id="slider3" class="comments__list slider__wrapper">
+            <li class="comments__item slider__item">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/img/olga.png" alt="" class="comments__avatar" width="100" height="100">
+              <h3 class="comments__name">Ольга, 37 лет</h3>
+              <p class="comments__comment">
+                Сегодня 6 день, смотрю в зеркало и любуюсь, такой кожи у меня не было даже в 13 лет (сейчас мне 30). Кожа ровная, с розоватым оттенком, поры исчезают на глазах, с каждым днем. Но и это еще не всё, косметолог сказал, что эффект будет только через месяц (куда ещё лучше, не понимаю). Вывод: процедура стоит своих денег, всех этих мучений (хотя лучше делать в отпуске), если эффект продержится 2 года, буду просто счастлива.
+              </p>
+            </li>
+            <li class="medics__item slider__item">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/img/olga.png" alt="" class="comments__avatar" width="100" height="100">
+              <h3 class="comments__name">Ольга, 37 лет</h3>
+              <p class="comments__comment">
+                Сегодня 6 день, смотрю в зеркало и любуюсь, такой кожи у меня не было даже в 13 лет (сейчас мне 30). Кожа ровная, с розоватым оттенком, поры исчезают на глазах, с каждым днем. Но и это еще не всё, косметолог сказал, что эффект будет только через месяц (куда ещё лучше, не понимаю). Вывод: процедура стоит своих денег, всех этих мучений (хотя лучше делать в отпуске), если эффект продержится 2 года, буду просто счастлива.
+              </p>
+            </li>
+            <li class="medics__item slider__item">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/img/olga.png" alt="" class="comments__avatar" width="100" height="100">
+              <h3 class="comments__name">Ольга, 37 лет</h3>
+              <p class="comments__comment">
+                Сегодня 6 день, смотрю в зеркало и любуюсь, такой кожи у меня не было даже в 13 лет (сейчас мне 30). Кожа ровная, с розоватым оттенком, поры исчезают на глазах, с каждым днем. Но и это еще не всё, косметолог сказал, что эффект будет только через месяц (куда ещё лучше, не понимаю). Вывод: процедура стоит своих денег, всех этих мучений (хотя лучше делать в отпуске), если эффект продержится 2 года, буду просто счастлива.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div id="controls3" class="slider__controls comments__controls">
+          <div class="slider__buttons">
+              <div class="slider__prev-btn"></div>
+              <div class="slider__next-btn"></div>
+          </div>
+          <ul class="slider__nav-btns">
+            <li class="slider__nav-btn"></li>
+            <li class="slider__nav-btn"></li>
+            <li class="slider__nav-btn"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="questions">
+        <h2 class="questions__tittle">
+          Часто задаваемые <span class="turquoise">вопросы</span>
+        </h2>
+        <ul class="questions__list">
+          <li class="questions__item questions__item--open">
+            <div class="questions__head">
+              <p class="questions__question">
+                Начав делать инъекции нейропротеина, потом от них нельзя будет отказаться?
+              </p>
+              <div class="questions__marker"></div>
+            </div>
+            <div class="questions__text">
+              <p class="questions__paragraph">Наоборот, мимический покой в течении срока действия нейропротеина приводит к постепенному разглаживанию и уменьшению выраженности уже имеющихся морщин.</p>
+              <p class="questions__paragraph">Нейропротеин лишь временно снижает напряжение и сократительную способность мимческих мыщц, да и то лишь частично.
+              После прекращения действия нейропротеина мышца полностью восстанавливает свою активность, причем даже при многократных и многолетних инъекциях в нее, что было показано в многочисленных исследованиях не только в косметологии, но и в неврологии.</p>
+            </div>
+          </li>
+          <li class="questions__item">
+            <div class="questions__head">
+              <p class="questions__question">
+                С какого возраста можно&nbsp;начинать колоть нейропротеин?
+              </p>
+              <div class="questions__marker"></div>
+            </div>
+            <p class="questions__text"></p>
+          </li>
+          <li class="questions__item">
+            <div class="questions__head">
+              <p class="questions__question">
+                Может ли нейропротеин влиять на умственные способности?
+              </p>
+              <div class="questions__marker"></div>
+            </div>
+            <p class="questions__text"></p>
+          </li>
+          <li class="questions__item">
+            <div class="questions__head">
+              <p class="questions__question">
+                На сколько инъекции нейропротеина опасны для&nbsp;беременных и кормящих?
+              </p>
+              <div class="questions__marker"></div>
+            </div>
+            <p class="questions__text"></p>
+          </li>
+          <li class="questions__item">
+            <div class="questions__head">
+              <p class="questions__question">
+                Чем отличаются друг от&nbsp;друга разные препараты нейропротеина?
+              </p>
+              <div class="questions__marker"></div>
+            </div>
+            <p class="questions__text"></p>
+          </li>
+        </ul>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title">Остались <span class="turquoise">вопросы</span>?</h2>
+        <p class="feedback__about">Если у вас остались вопросы, заполните форму ниже и наш специалист свяжется с вами в ближайшее время для консультации бесплатно.</p>
+        <form action="" class="feedback__form">
+        <p class="feedback__input-wrapper input__wrapper">
+            <input type="text" class="feedback__input input" placeholder="Имя">
+          </p>
+          <p class="feedback__input-wrapper input__wrapper">
+            <input type="text" class="feedback__input input" placeholder="Телефон">
+          </p>
+          <p class="feedback__input-wrapper input__wrapper feedback__textarea-wrapper">
+            <textarea name="" id="" cols="30" rows="3" class="feedback__texarea input" placeholder="Введите ваш вопрос"></textarea>
+          </p>
+          <input id="feedback-agree" type="checkbox" class="feedback__agree visually-hidden" checked>
+          <label for="feedback-agree" class="feedback__label checkbox-label">
+            <a href="#" class="feedback__policy">
+              Соглашение о политике
+              конфиденциальности
+            </a>
+          </label>
+          <button class="feedback__button button" type="submit">Оставить заявку</button>
+        </form>
+      </section>
+      <section></section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

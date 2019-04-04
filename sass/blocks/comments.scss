@@ -1,0 +1,44 @@
+@media (min-width: 320px) {
+  .comments {
+    @include mobile-side-paddings;
+    padding-bottom: 143px;
+    background-image: url("img/m-comments-left.png"),
+    url("img/m-comments-right.png"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='863px' height='621px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.302' fill='rgb(205, 249, 255)' d='M863.000,600.616 C863.000,600.616 750.697,620.779 600.504,620.779 C490.746,620.779 346.512,592.673 246.314,592.673 C90.847,592.673 -0.000,609.781 -0.000,609.781 L-0.000,-0.001 L863.000,-0.001 L863.000,600.616 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M863.000,600.616 C863.000,600.616 750.697,620.779 600.504,620.779 C490.746,620.779 346.512,592.673 246.314,592.673 C90.847,592.673 -0.000,609.781 -0.000,609.781 L-0.000,-0.001 L863.000,-0.001 L863.000,600.616 Z'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='863px' height='633px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.6' fill='rgb(227, 252, 255)' d='M-0.000,582.286 C-0.000,582.286 82.303,622.324 234.928,628.111 C344.609,632.270 511.762,579.110 611.891,582.896 C764.928,588.684 863.000,632.999 863.000,632.999 L863.000,-0.001 L-0.000,-0.001 L-0.000,582.286 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M-0.000,582.286 C-0.000,582.286 82.303,622.324 234.928,628.111 C344.609,632.270 511.762,579.110 611.891,582.896 C764.928,588.684 863.000,632.999 863.000,632.999 L863.000,-0.001 L-0.000,-0.001 L-0.000,582.286 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 0 186px, 276px 186px, -201px 25px, 0 25px;
+  }
+
+  .comments__tittle {
+    @include mobile-title;
+    @include reset-margin-padding;
+    margin-bottom: 22px;
+  }
+
+  .comments__about {
+    @include reset-margin-padding;
+    @include mobile-side-paddings;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .comments__avatar {
+    margin-bottom: 4px;
+  }
+
+  .comments__name {
+    @include reset-margin-padding;
+    margin-bottom: 12px;
+  }
+
+  .comments__comment {
+    @include reset-margin-padding;
+    line-height: 19px;
+  }
+
+  .comments__controls {
+    margin-top: -8px;
+  }
+}

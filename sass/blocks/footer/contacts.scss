@@ -1,0 +1,46 @@
+@media (min-width: 320px) {
+  .contacts {
+    margin-bottom: 11px;
+  }
+  .contacts__title {
+    @include footer-title;
+    margin-bottom: 15px;
+  }
+
+  .contacts__list {
+    @include reset-list;
+    padding-left: 36px;
+  }
+
+  .contacts__item {
+    margin-bottom: 22px;
+  }
+
+  .contacts__tel {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+
+
+    &::before {
+      @include before-icon-in-circle(27px);
+      left: -36px;
+      top: -1px;
+      background-image: url("img/telephone.png");
+      background-position: 5px 5px;
+    }
+  }
+
+  .contacts__email {
+    padding-left: 5px;
+    position: relative;
+
+    &::before {
+      @include before-icon-in-circle(27px);
+      left: -38px;
+      top: -5px;
+      background-image: url("img/mail.png");
+      background-position: 5px 7px;
+    }
+  }
+}

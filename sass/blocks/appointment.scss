@@ -31,12 +31,7 @@
   }
 
   .appointment__input-wrapper {
-    padding: 2px;
-    background-image: linear-gradient( 180deg, rgb(60,180,194) 0%, rgb(24,217,240) 100%);
-    border-radius: 30px;
-    position: relative;
     margin-bottom: 13px;
-    display: flex;
   }
   .appointment__input {
     width: 100%;
@@ -49,38 +44,5 @@
     &::placeholder {
       color: #d5d5d5;
     }
-  }
-
-  .appointment__label {
-    display: flex;
-    padding-top: 8px;
-    color: #afafaf;
-    margin-bottom: 30px;
-
-    .appointment__link {
-      color: #afafaf;
-    }
-
-    .appointment__link:visited {
-      color: #afafaf;
-    }
-
-    &::before {
-      content: "";
-      display: block;
-      align-self: center;
-      min-width: 20px;
-      width: 20px;
-      height: 20px;
-      border: 1px solid rgb(230, 230, 230);
-      margin-right: 15px;
-      margin-left: 2px;
-    }
-  }
-
-  input:checked ~ .appointment__label::before {
-    background-image: url("img/check.png");
-    background-repeat: no-repeat;
-    background-position: 3px 4px;
   }
 }

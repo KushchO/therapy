@@ -1,0 +1,76 @@
+@media (min-width: 320px) {
+  .feedback {
+    @include mobile-side-paddings;
+    padding-bottom: 340px;
+    background-image: url("img/map.png");
+    background-position: 0 85px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 28px;
+      height: 40px;
+      background-image: url("img/map-marker.png");
+      left: 145px;
+      bottom: 150px;
+    }
+  }
+
+  .feedback__title {
+    @include mobile-title;
+    @include reset-margin-padding;
+    margin-bottom: 24px;
+  }
+
+  .feedback__about {
+    @include reset-margin-padding;
+    text-align: center;
+    line-height: 19px;
+    margin-bottom: 31px
+  }
+
+  .feedback__form {
+    padding: 0 10px;
+    padding-bottom: 44px;
+  }
+
+  .feedback__input {
+    padding: 12px 27px;
+  }
+
+  .feedback__input-wrapper {
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  .feedback__textarea-wrapper {
+    margin-bottom: 3px;
+  }
+
+  .feedback__texarea {
+    min-height: 80px;
+  }
+
+  .feedback__label {
+    padding-left: 20px;
+    margin-bottom: 22px;
+  }
+
+  .feedback__label::before {
+    align-self: flex-start;
+  }
+
+  .feedback__policy {
+    text-decoration: none;
+  }
+
+  .feedback__button {
+    padding: 15px 70px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+

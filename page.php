@@ -180,7 +180,7 @@ get_header();
           <h2 class="result__title">Естественный <span class="turquoise">результат и сохранение</span> индивидуальности</h2>
           <p class="result__text">Посмотрите возможности применения ботулинотерапии</p>
           <div class="slider__viewport result__slider">
-            <ul id="slider1" class="slider__wrapper">
+            <ul id="slider1" class="slider1 slider__wrapper">
               <li class="slider__item result__item">
                 <div id="result__container1" class="result__container">
                   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
@@ -274,7 +274,7 @@ get_header();
         <h2 class="medics__tittle">Наши <span class="turquoise">врачи</span></h2>
         <p class="medics__about">Средний опыт наших специалистов 10 лет</p>
         <div class="medics__slider slider__viewport result__slider">
-          <ul id="slider2" class="medics__list slider__wrapper">
+          <ul id="slider2" class="slider2 medics__list slider__wrapper">
             <li class="medics__item slider__item">
               <div class="medics__item-wrapper">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/img/sharova-alisa.png" alt="" class="medics__img" width="250" height="200">
@@ -359,7 +359,7 @@ get_header();
         </div>
       </section>
       <section class="questions">
-        <h2 class="questions__tittle">
+        <h2 class="questions__title">
           Часто задаваемые <span class="turquoise">вопросы</span>
         </h2>
         <ul class="questions__list">
@@ -415,9 +415,9 @@ get_header();
         </ul>
       </section>
       <section class="feedback">
+        <form action="" class="feedback__form">
         <h2 class="feedback__title">Остались <span class="turquoise">вопросы</span>?</h2>
         <p class="feedback__about">Если у вас остались вопросы, заполните форму ниже и наш специалист свяжется с вами в ближайшее время для консультации бесплатно.</p>
-        <form action="" class="feedback__form">
         <p class="feedback__input-wrapper input__wrapper">
             <input type="text" class="feedback__input input" placeholder="Имя">
           </p>
@@ -437,7 +437,6 @@ get_header();
           <button class="feedback__button button" type="submit">Оставить заявку</button>
         </form>
       </section>
-      <section></section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

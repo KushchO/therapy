@@ -65,3 +65,18 @@
   color: #2e9ca9;
   text-align: center;
 }
+
+@mixin social-change {
+  .social__item:nth-child(1) {
+    order: 2;
+  }
+  .social__item:nth-child(2) {
+    order: 1;
+  }
+  .social__item:nth-child(3) {
+    order: 0;
+  }
+  .social__item:nth-child(4) {
+    order: 3;
+  }
+}

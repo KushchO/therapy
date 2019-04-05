@@ -110,32 +110,31 @@ cursor: ew-resize;
   font-size:30px;
 }
 
-@media (min-width: 320px) {
-  .result {
-    @include mobile-side-paddings;
-    padding-bottom: 50px;
-    margin-bottom: 30px;
-  }
-
-  .result__title {
-    @include reset-margin-padding;
-    @include mobile-title;
-    padding: 0 10px;
-    margin-top: 63px;
-    margin-bottom: 25px;
-  }
-
-  .result__text {
-    @include reset-margin-padding;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-
-  .result__img {
-    height: 310px;
-  }
+.result {
+  @include mobile-side-paddings;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
 }
+
+.result__title {
+  @include reset-margin-padding;
+  @include mobile-title;
+  padding: 0 10px;
+  margin-top: 63px;
+  margin-bottom: 25px;
+}
+
+.result__text {
+  @include reset-margin-padding;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.result__img {
+  height: 310px;
+}
+
 
 @media (min-width: 1440px) {
   .result {

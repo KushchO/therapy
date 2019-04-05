@@ -86,6 +86,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/feedback.scss";
 
 /*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+@import "blocks/header/modal.scss";
+
+
+/*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
 @import "blocks/footer/footer.scss";

@@ -1,57 +1,103 @@
-@media (min-width: 320px) {
-  .comments {
-    @include mobile-side-paddings;
-    padding-bottom: 143px;
-    background-image: url("img/m-comments-left.png"),
-    url("img/m-comments-right.png"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='863px' height='621px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.302' fill='rgb(205, 249, 255)' d='M863.000,600.616 C863.000,600.616 750.697,620.779 600.504,620.779 C490.746,620.779 346.512,592.673 246.314,592.673 C90.847,592.673 -0.000,609.781 -0.000,609.781 L-0.000,-0.001 L863.000,-0.001 L863.000,600.616 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M863.000,600.616 C863.000,600.616 750.697,620.779 600.504,620.779 C490.746,620.779 346.512,592.673 246.314,592.673 C90.847,592.673 -0.000,609.781 -0.000,609.781 L-0.000,-0.001 L863.000,-0.001 L863.000,600.616 Z'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='863px' height='633px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.6' fill='rgb(227, 252, 255)' d='M-0.000,582.286 C-0.000,582.286 82.303,622.324 234.928,628.111 C344.609,632.270 511.762,579.110 611.891,582.896 C764.928,588.684 863.000,632.999 863.000,632.999 L863.000,-0.001 L-0.000,-0.001 L-0.000,582.286 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M-0.000,582.286 C-0.000,582.286 82.303,622.324 234.928,628.111 C344.609,632.270 511.762,579.110 611.891,582.896 C764.928,588.684 863.000,632.999 863.000,632.999 L863.000,-0.001 L-0.000,-0.001 L-0.000,582.286 Z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 0 186px, 276px 186px, -201px 25px, 0 25px;
-  }
+.comments {
+  @include mobile-side-paddings;
+  padding-bottom: 143px;
+  background-image: url("img/m-comments-left.png"),
+  url("img/m-comments-right.png"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='863px' height='621px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.302' fill='rgb(205, 249, 255)' d='M863.000,600.616 C863.000,600.616 750.697,620.779 600.504,620.779 C490.746,620.779 346.512,592.673 246.314,592.673 C90.847,592.673 -0.000,609.781 -0.000,609.781 L-0.000,-0.001 L863.000,-0.001 L863.000,600.616 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M863.000,600.616 C863.000,600.616 750.697,620.779 600.504,620.779 C490.746,620.779 346.512,592.673 246.314,592.673 C90.847,592.673 -0.000,609.781 -0.000,609.781 L-0.000,-0.001 L863.000,-0.001 L863.000,600.616 Z'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='863px' height='633px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.6' fill='rgb(227, 252, 255)' d='M-0.000,582.286 C-0.000,582.286 82.303,622.324 234.928,628.111 C344.609,632.270 511.762,579.110 611.891,582.896 C764.928,588.684 863.000,632.999 863.000,632.999 L863.000,-0.001 L-0.000,-0.001 L-0.000,582.286 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M-0.000,582.286 C-0.000,582.286 82.303,622.324 234.928,628.111 C344.609,632.270 511.762,579.110 611.891,582.896 C764.928,588.684 863.000,632.999 863.000,632.999 L863.000,-0.001 L-0.000,-0.001 L-0.000,582.286 Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 186px, 276px 186px, -201px 25px, 0 25px;
+}
 
-  .comments__tittle {
-    @include mobile-title;
-    @include reset-margin-padding;
-    margin-bottom: 22px;
-  }
+.comments__tittle {
+  @include mobile-title;
+  @include reset-margin-padding;
+  margin-bottom: 22px;
+}
 
-  .comments__about {
-    @include reset-margin-padding;
-    @include mobile-side-paddings;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 25px;
-  }
+.comments__about {
+  @include reset-margin-padding;
+  @include mobile-side-paddings;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
 
-  .comments__avatar {
-    margin-bottom: 4px;
-  }
+.comments__avatar {
+  margin-bottom: 4px;
+}
 
-  .comments__name {
-    @include reset-margin-padding;
-    margin-bottom: 12px;
-  }
+.comments__name {
+  @include reset-margin-padding;
+  margin-bottom: 12px;
+}
 
-  .comments__comment {
-    @include reset-margin-padding;
-    line-height: 19px;
-  }
+.comments__comment {
+  @include reset-margin-padding;
+  line-height: 19px;
+}
 
   .comments__controls {
     margin-top: -8px;
   }
-}
+
 
 @media (min-width: 1440px) {
   .comments {
     @include side-paddings ($desktop-left-padding, $desktop-right-padding);
-
+    padding-bottom: 200px;
+    background-image:
+    url("img/comm_d1.png"),
+    url("img/comm_d2.png"),
+    url("img/comm_d3.png"),
+    url("img/comm_d4.png"),
+    url("img/comm_d5.png"),
+    url("img/comm_d6.png"),
+    url("img/comm_d7.png"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1441px' height='1016px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.302' fill='rgb(205, 249, 255)' d='M1441.000,982.999 C1441.000,982.999 1253.482,1015.998 1002.696,1015.998 C819.427,1015.998 578.591,969.998 411.285,969.998 C151.692,969.998 0.000,997.998 0.000,997.998 L0.000,-0.003 L1441.000,-0.003 L1441.000,982.999 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M1441.000,982.999 C1441.000,982.999 1253.482,1015.998 1002.696,1015.998 C819.427,1015.998 578.591,969.998 411.285,969.998 C151.692,969.998 0.000,997.998 0.000,997.998 L0.000,-0.003 L1441.000,-0.003 L1441.000,982.999 Z'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1441px' height='1036px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.6' fill='rgb(227, 252, 255)' d='M0.000,952.998 C0.000,952.998 137.427,1018.526 392.272,1027.998 C575.414,1034.805 854.518,947.801 1021.709,953.999 C1277.243,963.471 1441.000,1035.998 1441.000,1035.998 L1441.000,-0.003 L0.000,-0.003 L0.000,952.998 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M0.000,952.998 C0.000,952.998 137.427,1018.526 392.272,1027.998 C575.414,1034.805 854.518,947.801 1021.709,953.999 C1277.243,963.471 1441.000,1035.998 1441.000,1035.998 L1441.000,-0.003 L0.000,-0.003 L0.000,952.998 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+    1364px 83px,
+    1271px 514px,
+    1170px 241px,
+    280px 317px,
+    138px 134px,
+    0 351px,
+    57px 585px,
+    0 -245px, 0 -245px;
   }
 
   .comments__tittle {
     @include desktop-title;
     text-align: center;
     padding: 40px 288px 0 289px;
+    margin-bottom: 15px;
+  }
+
+  .comments__about {
+    font-size: 26px;
+    margin-bottom: 55px;
+  }
+
+  .comments__avatar {
+    margin-bottom: 20px;
+  }
+
+  .comments__name {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .comments__comment {
+
+    padding: 0 270px;
+    font-size: $desktop-main-font;
+    line-height: 27px;
+  }
+
+  .comments__controls {
+    margin-top: 19px;
+    padding: 0 401px;
   }
 }

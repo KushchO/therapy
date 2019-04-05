@@ -1,21 +1,45 @@
-@media (min-width: 320px){
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.address__title {
+  @include footer-title;
+  margin-bottom: 5px;
+}
+
+.address__info {
+  font-size: 16px;
+  width: 100%;
+}
+
+.address__street {
+  margin-bottom: 14px;
+}
+
+@media (min-width: 1440px) {
   .address {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+    max-width: 350px;
+    margin-left: auto;
+    padding-top: 10px;
+    order: 3;
+    text-align: right;
+    margin-bottom: 22px;
   }
 
   .address__title {
-    @include footer-title;
-    margin-bottom: 5px;
+    width: 100%;
+    text-align: right;
+    font-size: 22px;
   }
 
   .address__info {
-    font-size: 16px;
-    width: 100%;
+    font-size: 18px;
   }
 
   .address__street {
-    margin-bottom: 14px;
+    margin-bottom: 7px;
   }
+
 }

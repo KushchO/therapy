@@ -1,76 +1,145 @@
-@media (min-width: 320px) {
+.feedback {
+  @include mobile-side-paddings;
+  padding-bottom: 340px;
+  background-image: url("img/map.png");
+  background-position: 0 85px;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 40px;
+    background-image: url("img/map-marker.png");
+    left: 145px;
+    bottom: 150px;
+  }
+}
+
+.feedback__title {
+  @include mobile-title;
+  @include reset-margin-padding;
+  margin-bottom: 24px;
+}
+
+.feedback__about {
+  @include reset-margin-padding;
+  text-align: center;
+  line-height: 19px;
+  margin-bottom: 31px
+}
+
+.feedback__form {
+  padding: 0 10px;
+  padding-bottom: 44px;
+}
+
+.feedback__input {
+  padding: 12px 27px;
+}
+
+.feedback__input-wrapper {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.feedback__textarea-wrapper {
+  margin-bottom: 3px;
+}
+
+.feedback__texarea {
+  min-height: 80px;
+}
+
+.feedback__label {
+  padding-left: 20px;
+  margin-bottom: 22px;
+}
+
+.feedback__label::before {
+  align-self: flex-start;
+}
+
+.feedback__policy {
+  text-decoration: none;
+}
+
+.feedback__button {
+  padding: 15px 70px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+
+@media (min-width: 1440px) {
   .feedback {
-    @include mobile-side-paddings;
-    padding-bottom: 340px;
-    background-image: url("img/map.png");
-    background-position: 0 85px;
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+    padding-top: 50px;
+    padding-bottom: 54px;
+    background-image: url("img/map_d.png");
     background-repeat: no-repeat;
-    position: relative;
+    background-position: 0 0px;
 
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 28px;
-      height: 40px;
-      background-image: url("img/map-marker.png");
-      left: 145px;
-      bottom: 150px;
+      background-image: url("img/map-marker_d.png");
+      width: 45px;
+      height: 64px;
+      left: 1007px;
+      bottom: 606px;
     }
   }
 
   .feedback__title {
-    @include mobile-title;
-    @include reset-margin-padding;
-    margin-bottom: 24px;
+    @include desktop-title;
+    text-align: center;
   }
 
   .feedback__about {
-    @include reset-margin-padding;
-    text-align: center;
-    line-height: 19px;
-    margin-bottom: 31px
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 20px;
+    margin-bottom: 40px;
   }
 
   .feedback__form {
-    padding: 0 10px;
-    padding-bottom: 44px;
-  }
-
-  .feedback__input {
-    padding: 12px 27px;
+    @include product;
+    padding-top: 34px;
+    margin-top: -150px;
+    box-sizing: border-box;
+    max-width: 468px;
   }
 
   .feedback__input-wrapper {
-    margin-top: 0;
-    margin-bottom: 14px;
+    max-width: 332px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .feedback__textarea-wrapper {
-    margin-bottom: 3px;
+    margin-bottom: 9px;
+  }
+
+  .feedback__input {
+    padding: 16px 27px;
   }
 
   .feedback__texarea {
-    min-height: 80px;
+    min-height: 121px;
   }
 
   .feedback__label {
-    padding-left: 20px;
-    margin-bottom: 22px;
-  }
-
-  .feedback__label::before {
-    align-self: flex-start;
+    padding-left: 90px;
+    margin-bottom: 18px;
   }
 
   .feedback__policy {
-    text-decoration: none;
+    max-width: 166px;
   }
 
   .feedback__button {
-    padding: 15px 70px;
-    font-size: 18px;
-    margin-bottom: 0;
+    padding: 18px 85px;
+    font-size: 22px;
   }
 }
-

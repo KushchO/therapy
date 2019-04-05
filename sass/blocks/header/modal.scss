@@ -1,0 +1,20 @@
+.modal {
+  @include mobile-side-paddings;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-top: 12px;
+}
+
+.modal__close {
+  @include reset-button;
+  display: block;
+  margin-left: auto;
+  margin-top: 8px;
+  width: 20px;
+  height: 20px;
+  background-image: url("img/close.png");
+}
+
+.modal__social-title {
+  display: none;
+}

@@ -1,3 +1,6 @@
+const sliderResult = document.querySelector('#slider1');
+const sliderMedics = document.querySelector('#slider2');
+
 
 var slider = function (itemId, controls) {
   console.log(itemId);
@@ -85,10 +88,32 @@ var slider = function (itemId, controls) {
       }
     }
 }
+window.addEventListener(`resize`, event => {
+  let viewPort = window.innerWidth;
+  if(viewPort < 1440)  {
+    if(!sliderResult.classList.contains('slider1')){
+      sliderResult.classList.add('slider1');
+    }
+    if(!sliderMedics.classList.contains('slider2')){
+      sliderMedics.classList.add('slider2');
+    }
+
+  }
+  if(viewPort >= 1440)  {
+    if(sliderResult.classList.contains('slider1')){
+      sliderResult.classList.remove('slider1');
+      sliderResult.style.transform = 'translate(0)';
+    }
+    if(sliderMedics.classList.contains('slider2')){
+      sliderMedics.classList.remove('slider2');
+      sliderMedics.style.transform = 'translate(0)';
+    }
+  }
+}, false);
 
 $(document).ready(function() {
-  //slider('#slider1', '#controls1');
-  //slider('#slider2', '#controls2');
+  slider('.slider1', '#controls1');
+  slider('.slider2', '#controls2');
   slider('#slider3', '#controls3');
 }
 );

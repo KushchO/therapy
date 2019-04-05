@@ -1,5 +1,36 @@
-@media (min-width: 320px) {
+.links {
+  display: none;
+  @include reset-list;
+}
+
+.links__link {
+  text-decoration: none;
+  color: $white;
+  font-size: 22px;
+}
+
+.links__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+@media (min-width: 1440px) {
   .links {
-    display: none;
+    display: block;
+    @include reset-list;
+    padding-top: 10px
   }
+
+  .links1__list {
+    min-width: 235px;
+    margin-right: 67px;
+    order: 0;
+  }
+
+  .links2__list {
+    min-width: 235px;
+    margin-right: 34px;
+    order: 1;
+  }
+
+
 }

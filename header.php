@@ -29,6 +29,51 @@
 
 	<header id="masthead" class="site__header">
 		<div class="header">
+      <div class="header__modal-menu modal">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo298x75_w.png" alt="Центр эстетической медицины" class="header__logo" width="270" height="auto">
+        <button class="modal__close"></button>
+        <ul class="links links3__list">
+          <li class="links1__item links__item"><a href="" class="links1__link links__link">Консультация</a></li>
+          <li class="links1__item links__item"><a href="" class="links1__link links__link">Препараты</a></li>
+          <li class="links1__item links__item"><a href="" class="links1__link links__link">Ботулинотерапия</a></li>
+          <li class="links1__item links__item"><a href="" class="links1__link links__link">Естественный результат</a></li>
+          <li class="links1__item links__item"><a href="" class="links1__link links__link">Научный руководитель</a></li>
+          <li class="links2__item links__item"><a href="" class="links2__link links__link">Наши врачи</a></li>
+          <li class="links2__item links__item"><a href="" class="links2__link links__link ">Отзывы</a></li>
+        </ul>
+        <div class="header__contacts contacts">
+          <h3 class="contacts__title">Наши контакты</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item"><span class="contacts__info contacts__tel">+7 (495) 984-41-08</span></li>
+            <li class="contacts__item"><span class="contacts__info contacts__email">info@chist-estetic.ru</span></li>
+          </ul>
+        </div>
+        <div class="footer__social social">
+      <h3 class="social__tittle modal__social-title">Мы в соцсетях</h3>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/insta-w.png" alt="" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/vk-w.png" alt="" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/facebook-w.png" alt="" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/youtube-w.png" alt="" class="social__icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+      </div>
       <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo298x75.png" alt="Центр эстетической медицины" class="header__logo" width="270" height="auto">
       <ul class="header__social social social__list">
         <li class="social__item"><a href="" class="social__link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/insta.png" alt="" class="social__icon"></a></li>

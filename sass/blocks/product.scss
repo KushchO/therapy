@@ -39,13 +39,11 @@
   margin-bottom: 38px;
 }
 
-@media (min-width: 320px) {
-  .product_calculate {
-    width: 276px;
-    padding: 10px 45px;
-    font-size: 18px;
-    margin-bottom: 0;
-  }
+.product_calculate {
+  width: 276px;
+  padding: 10px 45px;
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1440px) {

@@ -15,7 +15,11 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
 
 	<?php wp_head(); ?>
 </head>
@@ -27,13 +31,19 @@
 		<div class="header">
       <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo298x75.png" alt="Центр эстетической медицины" class="header__logo" width="270" height="auto">
       <ul class="header__social social social__list">
-        <li class="social__item"><a href="" class="social__list"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/insta.png" alt="" class="social__icon"></a></li>
-        <li class="social__item"><a href="" class="social__list"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/vk.png" alt="" class="social__icon"></a></li>
-        <li class="social__item"><a href="" class="social__list"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/facebook.png" alt="" class="social__icon"></a></li>
-        <li class="social__item"><a href="" class="social__list"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/youtube.png" alt="" class="social__icon"></a></li>
+        <li class="social__item"><a href="" class="social__link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/insta.png" alt="" class="social__icon"></a></li>
+        <li class="social__item"><a href="" class="social__link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/vk.png" alt="" class="social__icon"></a></li>
+        <li class="social__item"><a href="" class="social__link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/facebook.png" alt="" class="social__icon"></a></li>
+        <li class="social__item"><a href="" class="social__link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/youtube.png" alt="" class="social__icon"></a></li>
       </ul>
-      <p class="header__address"></p>
-      <p class="header__call"></p>
+      <p class="header__address">
+        <span class="header__text"><b class="header__bold">Адрес:</b> г. Москва,</span>
+        <span class="header__text">ул. Макаренко, дом 3, стр 2</span>
+      </p>
+      <p class="header__call">
+      <span class="header__text header__phone">+7 (495) 984-41-08</span>
+        <span class="header__text"><a href="#" class="header__link">заказать обратный звонок</a></span>
+      </p>
       <button class="header__burger"></button>
 		</div><!-- .header -->
     <section class="head_features">
@@ -61,4 +71,4 @@
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site__content">

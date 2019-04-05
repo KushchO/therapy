@@ -87,8 +87,8 @@ var slider = function (itemId, controls) {
 }
 
 $(document).ready(function() {
-  slider('#slider1', '#controls1');
-  slider('#slider2', '#controls2');
+  //slider('#slider1', '#controls1');
+  //slider('#slider2', '#controls2');
   slider('#slider3', '#controls3');
 }
 );

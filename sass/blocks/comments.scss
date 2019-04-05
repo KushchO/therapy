@@ -42,3 +42,16 @@
     margin-top: -8px;
   }
 }
+
+@media (min-width: 1440px) {
+  .comments {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+
+  }
+
+  .comments__tittle {
+    @include desktop-title;
+    text-align: center;
+    padding: 40px 288px 0 289px;
+  }
+}

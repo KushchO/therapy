@@ -39,8 +39,57 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
+  .header {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+    padding-top: 23px;
+    justify-content: flex-start;
+  }
 
+  .header__logo {
+    width: 270px;
+    height: 68px;
+  }
+
+  .header__social, .header__address, .header__call {
+    display: flex;
+  }
+
+  .header__social {
+    margin-top: 19px;
+    margin-left: 99px;
+  }
+
+  .header__address {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    font-size: $desktop-main-font;
+    letter-spacing: 0.025em;
+  }
+
+  .header__call {
+    display: flex;
+    flex-direction: column;
+    margin-left: 78px;
+    margin-top: 11px;
+    font-size: 24px;
+    letter-spacing: 0.025em;
+  }
+
+  .header__phone {
+    font-size: 24px;
+    margin-bottom: -6px;
+  }
+
+  .header__link {
+    color: $main;
+    font-size: 16px;
+  }
+
+  .header__burger {
+    display: none;
+  }
 }
 
 

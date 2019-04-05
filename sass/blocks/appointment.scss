@@ -20,12 +20,6 @@
     margin-bottom: 27px;
   }
 
-  .consultation {
-    .appointment__form {
-      display: none;
-    }
-  }
-
   .appointment__form {
     padding: 0 13px;
   }
@@ -44,5 +38,51 @@
     &::placeholder {
       color: #d5d5d5;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .appointment {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+    padding-bottom: 30px;
+  }
+
+  .appointment__title {
+    @include desktop-title;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 17px;
+    padding-right: 7px;
+  }
+
+  .appointment__welcome {
+    font-size: 26px;
+    padding-right: 0;
+    margin-bottom: 44px;
+  }
+
+  .appointment__form {
+    padding: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .appointment__input-wrapper {
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  .appointment__input {
+    padding: 17px 36px;
+  }
+
+  .appointment__button {
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .appointment__label {
+    order: 3;
   }
 }

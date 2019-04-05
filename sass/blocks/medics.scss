@@ -58,3 +58,73 @@
     margin-top: -24px;
   }
 }
+
+@media (min-width: 1440px) {
+  .medics {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+  }
+
+  .medics__tittle {
+    @include desktop-title;
+    margin-top: 137px;
+    margin-bottom: 19px;
+  }
+
+  .medics__about {
+    font-size: 26px;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 13px;
+  }
+
+  .medics__controls {
+    display: none;
+  }
+
+  .medics__list {
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-left: -15px;
+    overflow: visible;
+    display: flex;
+  }
+
+  .medics__list .medics__item {
+    width: 370px;
+    margin-right: 27px;
+  }
+
+  .medics__item-wrapper {
+    margin: 0;
+    max-width: 370px;
+    width: 370px;
+    padding-top: 27px;
+    padding-bottom: 1px;
+  }
+
+  .medics__img {
+    width: 311px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+  .medics__name {
+    margin-bottom: 21px;
+  }
+
+  .medics__speciality {
+    font-size: $desktop-main-font;
+    margin-bottom: 24px;
+  }
+
+  .medics__experience {
+    font-size: $desktop-main-font;
+    margin-bottom: 33px;
+  }
+
+  .medics__button {
+    margin-bottom: 30px;
+  }
+}

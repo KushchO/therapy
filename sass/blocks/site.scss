@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .site__header {
@@ -14,7 +15,7 @@
 }
 
 @media (min-width: 320px) {
-  .site {
+  .site__header {
     width: 320px;
     padding-bottom: 5px;
     background-image: url("img/header_back.png"),
@@ -26,17 +27,30 @@
   .site__header {
     padding-bottom: 4px;
   }
-
 }
 
-@media (min-width: 768px) {
-  .site {
-    width: 768px;
-    }
-}
 
 @media (min-width: 1440px) {
   .site {
-    width: 1440px;
+    width: 100%;
     }
+  .site__header {
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url("img/header_back_d.png"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440px' height='742px'%3E%3Cpath fill-rule='evenodd' fill='rgb(233, 252, 254)' d='M1440.000,708.094 C1440.000,708.094 1252.612,741.093 1002.000,741.093 C818.859,741.093 578.189,695.094 411.000,695.094 C151.587,695.094 -0.000,723.093 -0.000,723.093 L-0.000,-0.002 L1440.000,-0.002 L1440.000,708.094 Z'/%3E%3C/svg%3E");
+    background-position-y: 0, 30px;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .site__header {
+    position: relative;
+    z-index: 10;
+  }
+
+  .site__content {
+    position: relative;
+    z-index: 5;
+  }
+
 }

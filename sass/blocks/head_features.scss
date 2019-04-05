@@ -55,5 +55,60 @@
   .head_features__item:first-child .head_features__text{
     margin-top: 15px;
   }
+
 }
 
+@media (min-width: 1440px) {
+  .head_features {
+    position: relative;
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+    padding-bottom:140px;
+    z-index: 10;
+  }
+
+  .head_features__title {
+    font-size: 50px;
+    text-align: left;
+    margin-top: 85px;
+  }
+
+  .head_features__title2 {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 3px;
+    padding-left: 0;
+    padding-bottom: 42px;
+  }
+
+  .head_features__list {
+    min-width: 550px;
+    max-width: 550px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .head_features__item {
+    max-width: 265px;
+    margin-right: 8px;
+    margin-bottom: 28px;
+    flex-direction: column;
+  }
+
+  .head_features__item:nth-child(1) {
+    order: 0;
+  }
+  .head_features__item:nth-child(2) {
+    order: 2;
+  }
+  .head_features__item:nth-child(3) {
+    order: 1;
+    margin-top: 7px;
+  }
+  .head_features__item:nth-child(4) {
+    order: 3;
+  }
+
+  .head_features__text {
+    font-size: 20px;
+  }
+}

@@ -75,3 +75,49 @@
   }
 
 }
+
+@media (min-width: 1440px) {
+  .indications {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+    padding-top: 40px;
+    background-image: url("img/therapy.png");
+  }
+
+  .indications__wrapper {
+    width:600px;
+  }
+  .indications__title {
+    @include desktop-title;
+    @include reset-margin-padding;
+    margin-bottom: 18px;
+  }
+
+  .indications__list {
+    padding-right: 25px;
+  }
+
+  .indications__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .indications__heading {
+    font-size: $desktop-main-font;
+  }
+
+  .indications__text {
+    font-size: $desktop-main-font;
+    line-height: 27px;
+    margin-top: 0;
+  }
+
+  .indications__item--open {
+    .indications__heading {
+      padding-bottom: 10px;
+    }
+
+    .indications__text {
+      padding-right: 10px;
+   }
+  }
+}

@@ -57,3 +57,48 @@
   }
 
 }
+
+@media (min-width: 1440px) {
+  .sharova {
+    background-image: url("img/sharova_d.png");
+    background-repeat: no-repeat;
+    padding-right: 133px;
+    padding-left: 737px;
+    padding-bottom: 70px;
+  }
+
+  .sharova__title {
+    @include desktop-title;
+    padding-left: 0;
+    margin-top: 52px;
+    margin-bottom: 36px;
+  }
+
+  .sharova__img {
+    display: none;
+  }
+
+  .sharova_name {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 23px;
+  }
+
+  .sharova__list {
+    padding-left: 47px;
+  }
+
+  .sharova__archievements {
+    margin-bottom: 25px;
+  }
+
+  .sharova__text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .sharova__button  {
+    margin-top: 60px;
+    margin-left: 134px;
+  }
+}

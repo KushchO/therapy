@@ -18,10 +18,21 @@
   padding-right: 10px;
 }
 
+@mixin side-paddings ($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
 @mixin mobile-title {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+}
+
+@mixin desktop-title {
+  font-size: 40px;
+  line-height: 42px;
+  text-align: left;
 }
 
 @mixin product {
@@ -35,18 +46,18 @@
   font-weight: 400;
 }
 
-@mixin circle($width) {
+@mixin circle($width, $color) {
   display: block;
   width: $width;
   height: $width;
-  border: 1px solid #ffffff;
+  border: 1px solid $color;
   border-radius: 50%;
 }
 
-@mixin before-icon-in-circle($width) {
+@mixin before-icon-in-circle($width, $color) {
   content: "";
   position: absolute;
-  @include circle($width);
+  @include circle($width, $color);
   background-repeat: no-repeat;
 }
 

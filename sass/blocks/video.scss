@@ -26,3 +26,35 @@
     height: 193px;
   }
 }
+
+@media (min-width: 1440px) {
+  .video {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+
+    &::before {
+      background-image: url("img/play_d.png");
+      width: 103px;
+      height: 102px;
+      left: 670px;
+      top: 337px;
+    }
+  }
+
+  .video__title {
+    @include desktop-title;
+    margin-top: 77px;
+    margin-right: 82px;
+    text-align: center;
+
+  }
+
+  .video__img {
+    width: 973px;
+    height: 572px;
+    img {
+      margin-top: 27px;
+      margin-left: 100px;
+    }
+
+  }
+}

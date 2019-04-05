@@ -132,6 +132,8 @@ function maximus_scripts() {
 
   wp_enqueue_script( 'slider', get_template_directory_uri() . '/js/slider.js', array(), '20151215', true );
 
+  wp_enqueue_script( 'picturedill', get_template_directory_uri() . '/js/picturefill.min.js', array(), '20151215', false );
+
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

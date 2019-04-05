@@ -16,136 +16,40 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site__main">
       <section class="consultation">
-        <h2 class="consultation__title">
-          Как проходит
-          <span class="consultation__title turquoise">консультация</span>
-          в&nbsp;<span class="turquoise">нашей клинике</span>
-        </h2>
-        <ul class="consultation__list">
-          <li class="consultation__item">
-            <p class="consultation__text">Выявление показаний&nbsp;и противопоказаний</p>
-          </li>
-          <li class="consultation__item">
-            <p class="onsultation__text">Анализ индивидуальных особенностей непроизвольной мимики во время консультации</p>
-          </li>
-          <li class="consultation__item">
-            <p class="consultation__text">Осмотр, проведение мимических проб</p>
-          </li>
-          <li class="consultation__item">
-            <p class="consultation__text">Определение мимических паттернов всех эстетических зон, составление мимической карты пациента</p>
-          </li>
-          <li class="consultation__item">
-            <p class="consultation__text">Оценка анатомических особенностей мимических мышц-мишеней</p>
-          </li>
-          <li class="consultation__item">
-            <p class="consultation__text">Инъекции в соответствии с&nbsp;индивидуальной схемой инъекций</p>
-          </li>
-          <li class="consultation__item">
-            <p class="consultation__text">Работа в концепции Full face — со&nbsp;всеми областями лица и шеи</p>
-          </li>
-        </ul>
-        <div class ="consultation__appointment appointment">
-          <form id="appointment-form" action="" class="appointment__form">
-            <input type="text" class="appointment__input">
-            <input type="text" class="appointment__input">
-            <input id="appointment-agree" type="checkbox" class="appointment__input consultation__input--agree">
-            <label for="appointment-agree" class="appointment__label">
-            Согласие с условиями <a href="#">Политики конфиденциальности</a>
-            </label>
-          </form>
-          <button class="appointment__button button" form="appointment-form">Записаться</button>
+        <div class="consultation__wrapper">
+          <h2 class="consultation__title">
+            Как проходит
+            <span class="consultation__title turquoise">консультация</span>
+            в&nbsp;<span class="turquoise">нашей клинике</span>
+          </h2>
+          <ul class="consultation__list">
+            <li class="consultation__item">
+              <p class="consultation__text">Выявление показаний&nbsp;и противопоказаний</p>
+            </li>
+            <li class="consultation__item">
+              <p class="consultation__text">Анализ индивидуальных особенностей непроизвольной мимики во время консультации</p>
+            </li>
+            <li class="consultation__item">
+              <p class="consultation__text">Осмотр, проведение мимических проб</p>
+            </li>
+            <li class="consultation__item">
+              <p class="consultation__text">Определение мимических паттернов всех эстетических зон, составление мимической карты пациента</p>
+            </li>
+            <li class="consultation__item">
+              <p class="consultation__text">Оценка анатомических особенностей мимических мышц&nbsp;-мишеней</p>
+            </li>
+            <li class="consultation__item">
+              <p class="consultation__text">Инъекции в соответствии с&nbsp;индивидуальной схемой<br class="desktop-br">инъекций</p>
+            </li>
+            <li class="consultation__item">
+              <p class="consultation__text">Работа в концепции Full face — со&nbsp;всеми областями<br class="desktop-br"> лица и шеи</p>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="medicine">
-        <h2 class="medicine__title">
-          Используем <span class="turquoise">только сертифицированный</span> нейропротеин
-        </h2>
-        <ul class="medicine__list">
-          <li class="medicine__item product">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/botoks.png" alt="" class="product__img">
-            <div class="product__info">
-              <h3 class="product__title">Ботокс</h3>
-              <p class="product__manufacturer">Страна производитель — США</p>
-              <p class="product__price">Стоимость одной единицы — 450 руб. *</p>
-            </div>
-            <button class="product_calculate button">Рассчитать стоимость омоложения</button>
-          </li>
-          <li class="medicine__item product">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/dysport.png" alt="" class="product__img product__img--dysport">
-            <div class="product__info">
-              <h3 class="product__title">Диспорт</h3>
-              <p class="product__manufacturer">Страна производитель — Франция</p>
-              <p class="product__price">Стоимость одной единицы — 150 руб. *</p>
-            </div>
-            <button class="product_calculate button">Рассчитать стоимость омоложения</button>
-          </li>
-          <li class="medicine__item product">
-            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/xeomin.png" alt="" class="product__img">
-            <div class="product__info">
-              <h3 class="product__title">Ксеомин</h3>
-              <p class="product__manufacturer">Страна производитель — Германия</p>
-              <p class="product__price">Стоимость одной единицы — 400 руб. *</p>
-            </div>
-            <button class="product_calculate button">Рассчитать стоимость омоложения</button>
-          </li>
-        </ul>
-        <p class="medicine__note">
-          * Количество единиц рассчитывается индивидуально
-        </p>
-      </section>
-      <section class="indications">
-        <h2 class="indications__title">
-          Вам <span class="turquoise">поможет бутолинотерапия</span>,
-          если у вас:
-        </h2>
-        <ul class="indications__list">
-          <li class="indications__item">
-            <h3 class="indications__heading">Мимические морщины лба, межбровья, улов глаз</h3>
-            <p class="indications__text"></p>
-          </li>
-          <li class="indications__item">
-            <h3 class="indications__heading">Напряжение подбородка</h3>
-            <p class="indications__text"></p>
-          </li>
-          <li class="indications__item">
-            <h3 class="indications__heading">Опущение кончика носа</h3>
-            <p class="indications__text"></p>
-          </li>
-          <li class="indications__item">
-            <h3 class="indications__heading">Кисетные» морщины верхней губы</h3>
-            <p class="indications__text"></p>
-          </li>
-          <li class="indications__item">
-            <h3 class="indications__heading">Контурация мышечных тяжей на шее</h3>
-            <p class="indications__text"></p>
-          </li>
-          <li class="indications__item">
-            <h3 class="indications__heading">Дефигурация овала лица (формирование «брылей»)</h3>
-            <p class="indications__text"></p>
-          </li>
-          <li class="indications__item">
-            <h3 class="indications__heading">Опущение уголков рта</h3>
-            <p class="indications__text indications__text--closed"></p>
-          </li>
-          <li class="indications__item--open">
-            <h3 class="indications__heading indications__heading--open">Гипергидроз</h3>
-            <p class="indications__text indications__text--open">
-            Повышенное или избыточное потоотделение врачи называют гипергидрозом.
-            Повышенная потливость может как общей, так и локальной (гипергидроз подмышек, ладоней, стоп).
-            Врачи нашей компании подберут для Вас препарат и необходимую дозировку,
-            в зависимотсти от индивидуальных особенностей. Процедура занимает всего 20 минут.</p>
-          </li>
-        </ul>
-      </section>
-      <section class="appointment">
-        <h2 class="appointment__title">
-          Заметили у себя <span class="turquoise">признаки старения</span>?
-        </h2>
-        <p class="appointment__welcome">
-          Записывайтесь к нам на консультацию и мы поможем Вам!
-        </p>
+        <div class ="consultation__appointment appointment">
+          <h2 class="appointment__title">Запишитесь <span class="turquoise">на&nbsp;консультацию</span></h2>
         <form id="appointment-form" action="" class="appointment__form">
           <div class="appointment__input-wrapper input__wrapper">
             <input type="text" class="appointment__input" placeholder="Имя">
@@ -159,59 +63,172 @@ get_header();
           </label>
           </form>
           <button class="appointment__button button" form="appointment-form">Записаться</button>
+        </div>
       </section>
-      <section class="result">
-        <h2 class="result__title">Естественный <span class="turquoise">результат и сохранение</span> индивидуальности</h2>
-        <p class="result__text">Посмотрите возможности применения ботулинотерапии</p>
-        <div class="slider__viewport result__slider">
-          <ul id="slider1" class="slider__wrapper">
-            <li class="slider__item result__item">
-              <div id="result__container1" class="result__container">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
-                <div class="resize">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/after.jpg" alt="" class="result__img" width="300" height="300">
-                </div>
-                <span class="handle">
-                  <span class="result__marker"></span>
-                </span>
-              </div>
+      <section class="medicine">
+        <h2 class="medicine__title">
+          Используем <span class="turquoise">только сертифицированный</span> нейропротеин
+        </h2>
+        <ul class="medicine__list">
+          <li class="medicine__item product">
+            <div class="medicine__img-wrapper">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/img/botoks.png" alt="" class="product__img" width="130" height="151">
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Ботокс</h3>
+              <p class="product__manufacturer">Страна производитель — США</p>
+              <p class="product__price">Стоимость одной единицы — 450 руб. *</p>
+            </div>
+            <button class="product_calculate button">Рассчитать стоимость омоложения</button>
+          </li>
+          <li class="medicine__item product">
+            <div class="medicine__img-wrapper product__img--dysport">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/img/dysport.png" alt="" class="product__img" width="173" height="118">
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Диспорт</h3>
+              <p class="product__manufacturer">Страна производитель — Франция</p>
+              <p class="product__price">Стоимость одной единицы — 150 руб. *</p>
+            </div>
+            <button class="product_calculate button">Рассчитать стоимость омоложения</button>
+          </li>
+          <li class="medicine__item product">
+            <div class="medicine__img-wrapper">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/img/xeomin.png" alt="" class="product__img" width="142" height="156">
+            </div>
+            <div class="product__info">
+              <h3 class="product__title">Ксеомин</h3>
+              <p class="product__manufacturer">Страна производитель — Германия</p>
+              <p class="product__price">Стоимость одной единицы — 400 руб. *</p>
+            </div>
+            <button class="product_calculate button">Рассчитать стоимость омоложения</button>
+          </li>
+        </ul>
+        <p class="medicine__note">
+          * Количество единиц рассчитывается индивидуально
+        </p>
+      </section>
+      <section class="indications">
+        <div class="indications__wrapper">
+          <h2 class="indications__title">
+            Вам <span class="turquoise">поможет бутолинотерапия</span>,
+            если у вас:
+          </h2>
+          <ul class="indications__list">
+            <li class="indications__item">
+              <h3 class="indications__heading">Мимические морщины лба, межбровья, улов глаз</h3>
+              <p class="indications__text"></p>
             </li>
-            <li class="slider__item result__item">
-              <div id="result__container2" class="result__container">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
-                <div class="resize">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/after.jpg" alt="" class="result__img" width="300" height="300">
-                </div>
-                <span class="handle">
-                  <span class="result__marker"></span>
-                </span>
-              </div>
+            <li class="indications__item">
+              <h3 class="indications__heading">Напряжение подбородка</h3>
+              <p class="indications__text"></p>
             </li>
-            <li class="slider__item result__item">
-              <div id="result__container3" class="result__container">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
-                <div class="resize">
-                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/after.jpg" alt="" class="result__img" width="300" height="300">
-                </div>
-                <span class="handle">
-                  <span class="result__marker"></span>
-                </span>
-              </div>
+            <li class="indications__item">
+              <h3 class="indications__heading">Опущение кончика носа</h3>
+              <p class="indications__text"></p>
+            </li>
+            <li class="indications__item">
+              <h3 class="indications__heading">Кисетные» морщины верхней губы</h3>
+              <p class="indications__text"></p>
+            </li>
+            <li class="indications__item">
+              <h3 class="indications__heading">Контурация мышечных тяжей на шее</h3>
+              <p class="indications__text"></p>
+            </li>
+            <li class="indications__item">
+              <h3 class="indications__heading">Дефигурация овала лица (формирование «брылей»)</h3>
+              <p class="indications__text"></p>
+            </li>
+            <li class="indications__item">
+              <h3 class="indications__heading">Опущение уголков рта</h3>
+              <p class="indications__text indications__text--closed"></p>
+            </li>
+            <li class="indications__item indications__item--open">
+              <h3 class="indications__heading indications__heading--open">Гипергидроз</h3>
+              <p class="indications__text indications__text--open">
+              Повышенное или избыточное потоотделение врачи называют гипергидрозом.
+              Повышенная потливость может как общей, так и локальной (гипергидроз подмышек, ладоней, стоп).
+              Врачи нашей компании подберут для Вас препарат и необходимую дозировку,
+              в зависимотсти от индивидуальных особенностей. Процедура занимает всего 20 минут.</p>
             </li>
           </ul>
         </div>
-        <div id="controls1" class="slider__controls">
-          <div class="slider__buttons">
-              <div class="slider__prev-btn"></div>
-              <div class="slider__next-btn"></div>
+      </section>
+     <div class="appointment-result-bg">
+        <section class="appointment">
+          <h2 class="appointment__title">
+            Заметили у себя <span class="turquoise">признаки старения</span>?
+          </h2>
+          <p class="appointment__welcome">
+            Записывайтесь к нам на консультацию и мы поможем Вам!
+          </p>
+          <form id="appointment-form" action="" class="appointment__form">
+            <div class="appointment__input-wrapper input__wrapper">
+              <input type="text" class="appointment__input" placeholder="Имя">
+            </div>
+            <div class="appointment__input-wrapper input__wrapper">
+              <input type="text" class="appointment__input" placeholder="Телефон">
+            </div>
+            <input id="appointment-agree1" type="checkbox" class="appointment__input consultation__input--agree visually-hidden" checked>
+            <label class="appointment__label checkbox-label" for="appointment-agree1">
+            <span>Согласие с условиями <a href="#" class="appointment__link">Политики&nbsp;конфиденциальности</a></span>
+            </label>
+            <button class="appointment__button button" form="appointment-form">Записаться</button>
+            </form>
+        </section>
+        <section class="result">
+          <h2 class="result__title">Естественный <span class="turquoise">результат и сохранение</span> индивидуальности</h2>
+          <p class="result__text">Посмотрите возможности применения ботулинотерапии</p>
+          <div class="slider__viewport result__slider">
+            <ul id="slider1" class="slider__wrapper">
+              <li class="slider__item result__item">
+                <div id="result__container1" class="result__container">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
+                  <div class="resize">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/after.jpg" alt="" class="result__img" width="300" height="300">
+                  </div>
+                  <span class="handle">
+                    <span class="result__marker"></span>
+                  </span>
+                </div>
+              </li>
+              <li class="slider__item result__item">
+                <div id="result__container2" class="result__container">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
+                  <div class="resize">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/after.jpg" alt="" class="result__img" width="300" height="300">
+                  </div>
+                  <span class="handle">
+                    <span class="result__marker"></span>
+                  </span>
+                </div>
+              </li>
+              <li class="slider__item result__item">
+                <div id="result__container3" class="result__container">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/img/before.jpg" alt="" class="result__img" width="300" height="300">
+                  <div class="resize">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/after.jpg" alt="" class="result__img" width="300" height="300">
+                  </div>
+                  <span class="handle">
+                    <span class="result__marker"></span>
+                  </span>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="slider__nav-btns">
-            <li class="slider__nav-btn"></li>
-            <li class="slider__nav-btn"></li>
-            <li class="slider__nav-btn"></li>
-          </ul>
-        </div>
-      </section>
+          <div id="controls1" class="result__controls slider__controls">
+            <div class="slider__buttons">
+                <div class="slider__prev-btn"></div>
+                <div class="slider__next-btn"></div>
+            </div>
+            <ul class="slider__nav-btns">
+              <li class="slider__nav-btn"></li>
+              <li class="slider__nav-btn"></li>
+              <li class="slider__nav-btn"></li>
+            </ul>
+          </div>
+        </section>
+     </div>
       <section class="sharova">
         <h2 class="sharova__title">
           Шарова А.А. <span class="turquoise">
@@ -247,7 +264,11 @@ get_header();
         <h2 class="video__title">
         <span class="turquoise">Всё</span> о ботулинотерапии <span class="turquoise">за 4 минуты</span>
         </h2>
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/video.png" alt="" class="video__img" width="300" height="200">
+        <picture class="video__img">
+          <source media="(min-width: 1440px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/img/video_d.png 1x">
+          <img src="<?php echo get_stylesheet_directory_uri() ?>/img/video.png" alt="">
+        </picture>
+        </picture>
       </section>
       <section class="medics">
         <h2 class="medics__tittle">Наши <span class="turquoise">врачи</span></h2>

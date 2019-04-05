@@ -65,17 +65,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "main";
 @import "visually-hidden.scss";
-@import "blocks/result.scss";
 @import "blocks/button.scss";
 @import "blocks/input.scss";
 @import "blocks/slider.scss";
+@import "blocks/result.scss";
 @import "blocks/appointment.scss";
+@import "blocks/social.scss";
 @import "blocks/header.scss";
 @import "blocks/site.scss";
 @import "blocks/head_features.scss";
 @import "blocks/consultation.scss";
-@import "blocks/medicine.scss";
 @import "blocks/product.scss";
+@import "blocks/medicine.scss";
 @import "blocks/indications.scss";
 @import "blocks/sharova.scss";
 @import "blocks/video.scss";
@@ -88,7 +89,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # footer
 --------------------------------------------------------------*/
 @import "blocks/footer/footer.scss";
-@import "blocks/footer/social.scss";
 @import "blocks/footer/links.scss";
 @import "blocks/footer/address.scss";
 @import "blocks/footer/contacts.scss";

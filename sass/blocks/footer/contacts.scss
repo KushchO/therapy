@@ -23,7 +23,7 @@
 
 
     &::before {
-      @include before-icon-in-circle(27px);
+      @include before-icon-in-circle(27px, $white);
       left: -36px;
       top: -1px;
       background-image: url("img/telephone.png");
@@ -36,7 +36,7 @@
     position: relative;
 
     &::before {
-      @include before-icon-in-circle(27px);
+      @include before-icon-in-circle(27px, $white);
       left: -38px;
       top: -5px;
       background-image: url("img/mail.png");

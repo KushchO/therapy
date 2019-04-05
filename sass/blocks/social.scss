@@ -1,0 +1,44 @@
+@media (min-width: 320px) {
+  .social {
+    margin-bottom: 41px;
+  }
+  .social__tittle {
+    @include footer-title;
+    margin-bottom: 11px;
+  }
+
+  .social__list {
+    @include reset-list;
+    display: flex;
+  }
+
+  .social__item {
+    @include circle(28px, $footer-color);
+    position: relative;
+    margin-right: 8px;
+  }
+
+  .social__link {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+  .social__item {
+    @include circle(37px, $main);
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+  }
+
+  .social__link {
+    display: block;
+    margin: 0 auto;
+  }
+}

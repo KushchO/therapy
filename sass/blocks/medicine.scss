@@ -35,4 +35,41 @@
   }
 }
 
+@media (min-width: 320px) {
 
+
+}
+
+@media (min-width: 1440px) {
+  .medicine {
+    @include side-paddings ($desktop-left-padding, $desktop-right-padding);
+    margin-top: -50px;
+    margin-bottom: 65px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440px' height='1016px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.302' fill='rgb(205, 249, 255)' d='M0.000,32.997 C0.000,32.997 187.388,-0.002 438.000,-0.002 C621.141,-0.002 861.810,45.997 1029.000,45.997 C1288.413,45.997 1440.000,17.997 1440.000,17.997 L1440.000,1015.998 L0.000,1015.998 L0.000,32.997 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M0.000,32.997 C0.000,32.997 187.388,-0.002 438.000,-0.002 C621.141,-0.002 861.810,45.997 1029.000,45.997 C1288.413,45.997 1440.000,17.997 1440.000,17.997 L1440.000,1015.998 L0.000,1015.998 L0.000,32.997 Z'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440px' height='1036px'%3E%3Cdefs%3E%3ClinearGradient id='PSgrad_0' x1='0%25' x2='0%25' y1='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='rgb(255,255,255)' stop-opacity='1' /%3E%3Cstop offset='100%25' stop-color='rgb(255,255,255)' stop-opacity='0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill-rule='evenodd' opacity='0.6' fill='rgb(227, 252, 255)' d='M1440.000,82.997 C1440.000,82.997 1302.668,17.470 1048.000,7.998 C864.985,1.191 586.075,88.196 419.000,81.997 C163.643,72.525 0.000,-0.003 0.000,-0.003 L0.000,1035.998 L1440.000,1035.998 L1440.000,82.997 Z'/%3E%3Cpath fill='url(%23PSgrad_0)' d='M1440.000,82.997 C1440.000,82.997 1302.668,17.470 1048.000,7.998 C864.985,1.191 586.075,88.196 419.000,81.997 C163.643,72.525 0.000,-0.003 0.000,-0.003 L0.000,1035.998 L1440.000,1035.998 L1440.000,82.997 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 20px, 0 0;
+  }
+
+  .medicine__title {
+    @include desktop-title;
+    @include reset-margin-padding;
+    margin-top: 135px;
+    margin-bottom: 55px;
+  }
+
+  .medicine__list {
+    margin-bottom: 12px;
+  }
+
+  .medicine__item {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+  .medicine__note {
+    text-align: left;
+  }
+
+}

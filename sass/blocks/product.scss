@@ -47,3 +47,51 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1440px) {
+  .product {
+    padding-left: 60px;
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  .product__img {
+    margin: 0 auto;
+
+  }
+
+  .product__info {
+    margin-left: 48px;
+    padding-top: 14px;
+  }
+
+  .product__title {
+    margin-bottom: 20px;
+  }
+
+  .product__manufacturer {
+    font-size: $desktop-main-font;
+    margin-bottom: 20px;
+  }
+
+  .product__price {
+    font-size: $desktop-main-font;
+  }
+
+  .product_calculate {
+    align-self: center;
+    width: 300px;
+    margin-left: 125px;
+    padding: 5px 20px;
+    font-size: 22px;
+  }
+
+  .medicine__img-wrapper {
+    width: 180px;
+  }
+
+  .medicine__note {
+    text-align: left;
+  }
+
+}
